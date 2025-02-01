@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addMessage } from "./redux/chatSlice";
 
-const ws = new WebSocket("ws://localhost:5000");
+const ws = new WebSocket("https://chat-app-server-on3k.onrender.com");
 
 const App = () => {
   const dispatch = useDispatch();
